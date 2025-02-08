@@ -1,4 +1,4 @@
-# mousemove
+# CursorFlow
 Move around your mouse with your hand! With the camera!
 
 ## sources
