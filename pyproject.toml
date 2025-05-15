@@ -1,0 +1,10 @@
+[project]
+name = "handmouse"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "mediapipe>=0.10.14",
+    "numpy>=2.2.5",
+    "opencv-python>=4.11.0.86",
+    "pyautogui>=0.9.54",
+]
