@@ -226,6 +226,7 @@ dependencies = [
     { name = "numpy" },
     { name = "opencv-python" },
     { name = "pyautogui" },
+    { name = "raylib" },
 ]
 
 [package.metadata]
@@ -234,6 +235,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.2.5" },
     { name = "opencv-python", specifier = ">=4.11.0.86" },
     { name = "pyautogui", specifier = ">=0.9.54" },
+    { name = "raylib", specifier = ">=5.5.0.2" },
 ]
 
 [[package]]
@@ -840,6 +842,42 @@ name = "pytweening"
 version = "1.2.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/79/0c/c16bc93ac2755bac0066a8ecbd2a2931a1735a6fffd99a2b9681c7e83e90/pytweening-1.2.0.tar.gz", hash = "sha256:243318b7736698066c5f362ec5c2b6434ecf4297c3c8e7caa8abfe6af4cac71b", size = 171241, upload-time = "2024-02-20T03:37:56.809Z" }
+
+[[package]]
+name = "raylib"
+version = "5.5.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cffi" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8c/35/9bf3a2af73c55fd4310dcaec4f997c739888e0db9b4dfac71b7680810852/raylib-5.5.0.2.tar.gz", hash = "sha256:83c108ae3b4af40b53c93d1de2afbe309e986dd5efeb280ebe2e61c79956edb0", size = 181172, upload-time = "2024-11-26T11:12:02.791Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/63/58/2baf35b9bbb8d8b909689b6c5c4e22f6dca046928835b12ec8e727a629da/raylib-5.5.0.2-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:1ffde05241c73e4de35aced3a89e50f1cc24263402cebb6efa6e8395f1c35891", size = 1394212, upload-time = "2024-11-26T11:09:16.728Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/9a/5abb1b543ef15ad2c3be10e93b96cf612d5e4a83a602212f4cab07641dc4/raylib-5.5.0.2-cp310-cp310-macosx_14_0_arm64.whl", hash = "sha256:67cb27dbf218ee4f032e016ddbfa2bb9058d7c920a1ff0c8799b2addf162d190", size = 1247443, upload-time = "2024-11-26T11:09:19.644Z" },
+    { url = "https://files.pythonhosted.org/packages/26/50/c7c01d9d2ce282edd8d27d57c754d1e47cd554e9125061cac54abd1756c5/raylib-5.5.0.2-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:52b0e9bd1ef3093461b1c27af728be0d9b30aba7bcaebf9b9be4fd9bcf15fdc0", size = 2183586, upload-time = "2024-11-26T11:09:22.623Z" },
+    { url = "https://files.pythonhosted.org/packages/d3/20/5a3b975b1e313d9e34977f05b2b295403ea526cfe2a1836c95c2074b2abd/raylib-5.5.0.2-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:9be529fcee9a669bce84d08580e36949b392e6c8ada2e39537f638839437054e", size = 2277118, upload-time = "2024-11-26T11:09:25.462Z" },
+    { url = "https://files.pythonhosted.org/packages/4b/12/15a04f03d08cf8e55cb53a96df0e3b3a3093fefdbaf4f5da965d3d856b01/raylib-5.5.0.2-cp310-cp310-win_amd64.whl", hash = "sha256:34086acc1447bfd83faa16d31b3d12f16f5dd054043c63695af0e06553d4dfeb", size = 1693961, upload-time = "2024-11-26T11:09:28.644Z" },
+    { url = "https://files.pythonhosted.org/packages/9e/c4/ce21721b474eb8f65379f7315b382ccfe1d5df728eea4dcf287b874e7461/raylib-5.5.0.2-cp311-cp311-macosx_10_13_x86_64.whl", hash = "sha256:37eb0ec97fc6b08f989489a50e09b5dde519e1bb8eb17e4033ac82227b0e5eda", size = 1703742, upload-time = "2024-11-26T11:09:31.115Z" },
+    { url = "https://files.pythonhosted.org/packages/23/61/138e305c82549869bb8cd41abe75571559eafbeab6aed1ce7d8fbe3ffd58/raylib-5.5.0.2-cp311-cp311-macosx_14_0_arm64.whl", hash = "sha256:bb9e506ecd3dbec6dba868eb036269837a8bde68220690842c3238239ee887ef", size = 1247449, upload-time = "2024-11-26T11:09:34.182Z" },
+    { url = "https://files.pythonhosted.org/packages/85/e0/dc638c42d1a505f0992263d48e1434d82c21afdf376b06f549d2e281dfd4/raylib-5.5.0.2-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:70aa8bed67875a8cf25191f35263ef92d646bdfcb1f507915c81562a321f4931", size = 2184315, upload-time = "2024-11-26T11:09:36.715Z" },
+    { url = "https://files.pythonhosted.org/packages/c9/1a/49db57283a28fdc1ff0e4604911b7fff085128c2ac8bdd9efa8c5c47439d/raylib-5.5.0.2-cp311-cp311-manylinux2014_x86_64.whl", hash = "sha256:0365e8c578f72f598795d9377fc70342f0d62aa193c2f304ca048b3e28866752", size = 2278139, upload-time = "2024-11-26T11:09:39.475Z" },
+    { url = "https://files.pythonhosted.org/packages/f0/8a/e1a690ab6889d4cb67346a2d32bad8b8e8b0f85ec826b00f76b0ad7e6ad6/raylib-5.5.0.2-cp311-cp311-win_amd64.whl", hash = "sha256:5219be70e7fca03e9c4fddebf7e60e885d77137125c7a13f3800a947f8562a13", size = 1693944, upload-time = "2024-11-26T11:09:41.596Z" },
+    { url = "https://files.pythonhosted.org/packages/69/2b/49bfa6833ad74ddf318d54ecafe73d535f583531469ecbd5b009d79667d1/raylib-5.5.0.2-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:5233c529d9a0cfd469d88239c2182e55c5215a7755d83cc3d611148d3b9c9e67", size = 1706157, upload-time = "2024-11-26T11:09:43.6Z" },
+    { url = "https://files.pythonhosted.org/packages/58/9c/8a3f4de0c81ad1228bf26410cfe3ecdc73011c59f18e542685ffc92c0120/raylib-5.5.0.2-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:1f76204ffbc492722b571b12dbdc0dca89b10da76ddf48c12a3968d2db061dff", size = 1248027, upload-time = "2025-01-04T20:21:46.269Z" },
+    { url = "https://files.pythonhosted.org/packages/7f/16/63baf1aae94832b9f5d15cafcee67bb6dd07a20cf64d40bac09903b79274/raylib-5.5.0.2-cp312-cp312-manylinux2014_aarch64.whl", hash = "sha256:f8cc2e39f1d6b29211a97ec0ac818a5b04c43a40e747e4b4622101d48c711f9e", size = 2195374, upload-time = "2024-11-26T11:09:46.114Z" },
+    { url = "https://files.pythonhosted.org/packages/70/bd/61a006b4e3ce4a6ca974cb0ceeb19f3816815ebabac650e9bf82767e65f6/raylib-5.5.0.2-cp312-cp312-manylinux2014_x86_64.whl", hash = "sha256:f12da578a28da7f48481f46323e5aab8dd25461982b0e80d045782d6e69649f5", size = 2299593, upload-time = "2024-11-26T11:09:48.963Z" },
+    { url = "https://files.pythonhosted.org/packages/f4/4f/59d554cc495bea8235b17cebfc76ed57aaa602c613b870159e31282fd4c1/raylib-5.5.0.2-cp312-cp312-win_amd64.whl", hash = "sha256:b40234bbad9523fd6a2049640c76a98b4d6f0b8f4bd19bd33eaee55faf5e050d", size = 1696780, upload-time = "2024-11-26T11:09:50.787Z" },
+    { url = "https://files.pythonhosted.org/packages/ba/0a/78edc3ed1e2ca7e2ccea31ac5a8f4440a924662ee1042ecb76e08f465d8a/raylib-5.5.0.2-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:2bfa9419a12eeb259f99c75c351db167968306295a5017cd4735241eaf2fa399", size = 1706104, upload-time = "2024-11-26T11:09:53.571Z" },
+    { url = "https://files.pythonhosted.org/packages/48/fb/8b79a03c0d63bd6613d3e25df26d6c42fe36689f052abefa00a311be53fc/raylib-5.5.0.2-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:216456d0fa8da85c253a8596ca4b35c995bbf8af0fb8fa5244a4c6f5debfe294", size = 1248018, upload-time = "2024-11-26T11:09:56.257Z" },
+    { url = "https://files.pythonhosted.org/packages/57/42/8ef2a8e21a2b4ba7ac4ea13b1dd9bc5d1084020ddca06ad0c6582c784a4e/raylib-5.5.0.2-cp313-cp313-manylinux2014_x86_64.whl", hash = "sha256:4f1c33b7d2404e70dbf3dd8d71701efb24902adfcb553122bf3d9441ea4fd6f0", size = 2299336, upload-time = "2024-11-26T11:09:59.307Z" },
+    { url = "https://files.pythonhosted.org/packages/b4/67/4c25526fde4dabf5cc60093202f8d07a7dc4b1bd29d7b84db55b443a527c/raylib-5.5.0.2-cp313-cp313-win_amd64.whl", hash = "sha256:6b60c97a9f6cfaeef4f59ff162ea29f02c18282d129edebb62f132b2ad6bb935", size = 1696790, upload-time = "2024-11-26T11:10:01.812Z" },
+    { url = "https://files.pythonhosted.org/packages/a8/f6/ece34de6d042077c0f1a330e9be9bb34a206a89e8fd93bcf650f7e093b3d/raylib-5.5.0.2-pp310-pypy310_pp73-macosx_10_13_x86_64.whl", hash = "sha256:8cd3e6cfad35c5fe27d7543bc2253f955ae589d0178a65eadc8b81f0457e07c5", size = 1237003, upload-time = "2024-11-26T11:10:11.644Z" },
+    { url = "https://files.pythonhosted.org/packages/7b/de/9df930f355032e5701bc2827c0ef621f52301e25e68167254251c7c1aaa8/raylib-5.5.0.2-pp310-pypy310_pp73-manylinux2014_x86_64.whl", hash = "sha256:60c3c816afd8964820ae9f358b97d6b5602b1c396f813841a5ffcf1a3a6e184c", size = 1394869, upload-time = "2024-11-26T11:10:13.83Z" },
+    { url = "https://files.pythonhosted.org/packages/5b/86/2754979a9146e6d7cbcaf94c8768225fcfd494a3683c66638eb7cecb34b4/raylib-5.5.0.2-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:db5158e2d6a583b168c46ab78a43f65b6028ad5c42d7ead4487388e44a9497df", size = 1564198, upload-time = "2024-11-26T11:10:16.158Z" },
+    { url = "https://files.pythonhosted.org/packages/4a/22/2e02e3738ad041f5ec2830aecdfab411fc2960bfc3400e03b477284bfaf7/raylib-5.5.0.2-pp311-pypy311_pp73-macosx_10_13_x86_64.whl", hash = "sha256:bc45fe1c0aac50aa319a9a66d44bb2bd0dcd038a44d95978191ae7bfeb4a06d8", size = 1216231, upload-time = "2025-02-12T04:21:59.38Z" },
+    { url = "https://files.pythonhosted.org/packages/fe/7d/b29afedc4a706b12143f74f322cb32ad5a6f43e56aaca2a9fb89b0d94eee/raylib-5.5.0.2-pp311-pypy311_pp73-manylinux2014_x86_64.whl", hash = "sha256:2242fd6079da5137e9863a447224f800adef6386ca8f59013a5d62cc5cadab2b", size = 1394928, upload-time = "2025-02-12T04:22:03.021Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/fa/2daf36d78078c6871b241168a36156169cfc8ea089faba5abe8edad304be/raylib-5.5.0.2-pp311-pypy311_pp73-win_amd64.whl", hash = "sha256:e475a40764c9f83f9e66406bd86d85587eb923329a61ade463c3c59e1e880b16", size = 1564224, upload-time = "2025-02-12T04:22:05.911Z" },
+]
 
 [[package]]
 name = "rubicon-objc"

@@ -13,6 +13,7 @@ dependencies = [
     "numpy>=2.2.5",
     "opencv-python>=4.11.0.86",
     "pyautogui>=0.9.54",
+    "raylib>=5.5.0.2",
 ]
 
 

@@ -4,6 +4,24 @@ import pyautogui
 import numpy as np
 import threading
 
+import pyray as pr
+
+pr.init_window(0, 0, "Hello")
+monitor = 0  # Use primary monitor
+print(pr.get_monitor_count())
+screen_width = pr.get_monitor_width(monitor)
+screen_height = pr.get_monitor_height(monitor)
+pr.close_window()
+
+x = 0
+pr.set_config_flags(
+    pr.ConfigFlags.FLAG_WINDOW_TRANSPARENT | pr.ConfigFlags.FLAG_WINDOW_UNDECORATED
+    # | pr.ConfigFlags.FLAG_FULLSCREEN_MODE
+)
+pr.init_window(screen_width - 1, screen_height, "Hello")
+pr.set_window_position(0, 0)
+
+
 pyautogui.PAUSE = 0
 pyautogui.FAILSAFE = False
 
@@ -113,6 +131,7 @@ with mp_hands.Hands(
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         results = hands.process(image)
 
+        pr.clear_background(pr.BLANK)
         if results.multi_hand_landmarks:
             # process hand data
             wrist = results.multi_hand_landmarks[0].landmark[0]
@@ -165,6 +184,18 @@ with mp_hands.Hands(
                     pyautogui.mouseUp()
                     MOUSE_DOWN = False
 
+            pr.begin_drawing()
+            print(x, y)
+            pr.draw_text("Hello world", 0, 0, 20, pr.VIOLET)
+            pr.draw_text("Hello world", 190, 200, 20, pr.VIOLET)
+            pr.draw_circle(
+                int(SCREEN_RESOLUTION[0] - x * SCREEN_RESOLUTION[0]),
+                int(y * SCREEN_RESOLUTION[1]),
+                200,
+                pr.BLACK,
+            )
+            pr.end_drawing()
+
         # Draw the hand annotations on the image.
         image.flags.writeable = True
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -182,3 +213,4 @@ with mp_hands.Hands(
         cv2.imshow("", cv2.flip(image, 1))
         if cv2.waitKey(5) & 0xFF == ord("q"):
             cap.release()
+            pr.close_window()
