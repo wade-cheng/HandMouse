@@ -35,7 +35,7 @@ When the program starts, no menus are yet open.
 
 When the user presses `Button 1` (configured in settings), they will open a menu to control clicking. This is a radial menu for left, middle, and right clicking, with a deadzone. Releasing `Button 1` in the dead zone cancels any action. releasing `Button 1` in the left, middle, or right buttons presses that button on the computer. Holding the selection of a button double clicks that button on the computer.
 
-When the user presses `Button 2`, they will open a menu to control miscellaneous actions and settings. This is also a radial menu, and releasing in the dead zone also cancels any actions. Releasing `Button 2` the pause/resume button or the mouse/joystick button will toggle those features.
+When the user presses `Button 2`, they will open a menu to control miscellaneous actions and settings. This is also a radial menu, and releasing in the dead zone also cancels any actions. Releasing `Button 2`, the pause/resume button, or the mouse/joystick button will toggle those features.
 
 ```mermaid
 stateDiagram-v2
