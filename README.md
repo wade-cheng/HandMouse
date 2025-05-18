@@ -13,7 +13,7 @@ The int-to-joint mappings exist at the above link. Here's the image:
 
 ## technical description
 
-The user facing side of the program can be described as a concurrent state machine with 2 state machines.
+The user facing side of the program can be described as two concurrent state machines.
 
 The first state machine describes the ways your hand interacts with the cursor. Cursor movement is either paused, follows your hand like a mouse, or is moved by your hand like a joystick.
 
